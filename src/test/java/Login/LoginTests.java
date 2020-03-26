@@ -13,7 +13,7 @@ public class LoginTests {
     public void setUp() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get("https://www.facebook.com/");
+        driver.get("https://www.facbook.com/");
         Thread.sleep(5000);
 
         //1. maximize the window
@@ -25,10 +25,20 @@ public class LoginTests {
         driver.findElement(By.id("loginbutton")).click();
 
     }
+
     public static void main(String args[]) throws InterruptedException {
-        LoginTests tests = new  LoginTests();
+        LoginTests tests = new LoginTests();
         tests.setUp();
 
-    }
-}
+    }}
+
+
+
+
+
+
+
+
+
+
 
